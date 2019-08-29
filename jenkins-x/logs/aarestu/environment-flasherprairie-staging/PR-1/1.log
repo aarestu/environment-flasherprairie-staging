@@ -1,0 +1,80 @@
+
+Showing logs for build [32maarestu-environment-flasherprai-1[0m stage [32mmeta-pipeline[0m and container [32mstep-credential-initializer-j7dq5[0m
+{"level":"warn","ts":1567064220.2699027,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1567064220.270355,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32maarestu-environment-flasherprai-1[0m stage [32mmeta-pipeline[0m and container [32mstep-working-dir-initializer-qn6tw[0m
+{"level":"warn","ts":1567064221.237966,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1567064221.2396946,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source\""}
+
+Showing logs for build [32maarestu-environment-flasherprai-1[0m stage [32mmeta-pipeline[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32maarestu-environment-flasherprai-1[0m stage [32mmeta-pipeline[0m and container [32mstep-git-source-meta-aarestu-environment-flashe-xrz6d[0m
+{"level":"warn","ts":1567064229.2845566,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1567064231.7582912,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/*******/environment-flasherprairie-staging.git @ fb96b0be2da8932b69c3465ad25c8734c280f60e in path /workspace/source"}
+
+Showing logs for build [32maarestu-environment-flasherprai-1[0m stage [32mmeta-pipeline[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:fb96b0be2da8932b69c3465ad25c8734c280f60e,1:50a52b798bfbc3fe7494119df95c4856a7ac8542
+DEBUG: ran git fetch --unshallow origin 50a52b798bfbc3fe7494119df95c4856a7ac8542: fb96b0be2da8932b69c3465ad25c8734c280f60e: in 
+DEBUG: ran git checkout master in 
+DEBUG: ran git reset --hard fb96b0be2da8932b69c3465ad25c8734c280f60e in 
+DEBUG: ran clean --force -d . in 
+DEBUG: ran git merge 50a52b798bfbc3fe7494119df95c4856a7ac8542 in 
+Merged SHA 50a52b798bfbc3fe7494119df95c4856a7ac8542 with commit message 'chore: Promote testwebspring to version 0.0.1' into base branch master
+
+Showing logs for build [32maarestu-environment-flasherprai-1[0m stage [32mmeta-pipeline[0m and container [32mstep-merge-pull-refs[0m
+DEBUG: ran git fetch origin 50a52b798bfbc3fe7494119df95c4856a7ac8542: fb96b0be2da8932b69c3465ad25c8734c280f60e: in 
+DEBUG: Unshallowed git repo in 
+DEBUG: ran git checkout master in 
+DEBUG: ran git reset --hard fb96b0be2da8932b69c3465ad25c8734c280f60e in 
+DEBUG: ran clean --force -d . in 
+DEBUG: ran git merge 50a52b798bfbc3fe7494119df95c4856a7ac8542 in 
+Merged SHA 50a52b798bfbc3fe7494119df95c4856a7ac8542 with commit message 'chore: Promote testwebspring to version 0.0.1' into base branch master
+
+Showing logs for build [32maarestu-environment-flasherprai-1[0m stage [32mmeta-pipeline[0m and container [32mstep-create-effective-pipeline[0m
+Deleting and cloning the Jenkins X versions repo
+Cloning the Jenkins X versions repo https://github.com/jenkins-x/jenkins-x-versions.git with ref refs/heads/master to /builder/home/.**/jenkins-x-versions
+selected pack: /builder/home/.**/draft/packs/github.com/jenkins-x-buildpacks/jenkins-x-kubernetes/packs/environment
+Effective pipeline written to jenkins-x-promotion-build-effective.yml
+
+Showing logs for build [32maarestu-environment-flasherprai-1[0m stage [32mmeta-pipeline[0m and container [32mstep-create-tekton-crds[0m
+PipelineActivity for *******-environment-flasherprairie-staging-PR-1-1
+Applying changes 
+upserted PipelineResource *******-environment-flasherprai for the git repository https://github.com/*******/environment-flasherprairie-staging.git
+upserted Task *******-environment-flasherprai-from-build-pack-1
+upserted Pipeline *******-environment-flasherprai-1
+created PipelineRun *******-environment-flasherprai-1
+created PipelineStructure *******-environment-flasherprai-1
+
+Showing logs for build [32maarestu-environment-flasherprai-1[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-rrwwj[0m
+{"level":"warn","ts":1567064253.7988195,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1567064253.799155,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32maarestu-environment-flasherprai-1[0m stage [32mfrom-build-pack[0m and container [32mstep-working-dir-initializer-ctlhh[0m
+{"level":"warn","ts":1567064254.8094568,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1567064254.8107543,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source /workspace/source/env\""}
+
+Showing logs for build [32maarestu-environment-flasherprai-1[0m stage [32mfrom-build-pack[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32maarestu-environment-flasherprai-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-aarestu-environment-flasherprai-wxg4x[0m
+{"level":"warn","ts":1567064259.8485465,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1567064262.3595917,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/*******/environment-flasherprairie-staging.git @ master in path /workspace/source"}
+
+Showing logs for build [32maarestu-environment-flasherprai-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:fb96b0be2da8932b69c3465ad25c8734c280f60e,1:50a52b798bfbc3fe7494119df95c4856a7ac8542
+DEBUG: ran git fetch --unshallow origin 50a52b798bfbc3fe7494119df95c4856a7ac8542: fb96b0be2da8932b69c3465ad25c8734c280f60e: in 
+DEBUG: ran git checkout master in 
+DEBUG: ran git reset --hard fb96b0be2da8932b69c3465ad25c8734c280f60e in 
+DEBUG: ran clean --force -d . in 
+DEBUG: ran git merge 50a52b798bfbc3fe7494119df95c4856a7ac8542 in 
+Merged SHA 50a52b798bfbc3fe7494119df95c4856a7ac8542 with commit message 'chore: Promote testwebspring to version 0.0.1' into base branch master
+
+Showing logs for build [32maarestu-environment-flasherprai-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-helm-build[0m
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Adding missing Helm repo: storage.googleapis.com https://storage.googleapis.com/chartmuseum.jenkins-x.io
+Successfully added Helm repository storage.googleapis.com.
+Adding missing Helm repo: jenkins-x-chartmuseum http://jenkins-x-chartmuseum:8080
+Successfully added Helm repository jenkins-x-chartmuseum.
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Adding missing Helm repo: chartmuseum.jenkins-x.io http://chartmuseum.jenkins-x.io
+Successfully added Helm repository chartmuseum.jenkins-x.io.
